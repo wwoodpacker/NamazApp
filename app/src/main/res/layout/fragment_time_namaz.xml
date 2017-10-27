@@ -1,0 +1,531 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:scrollbarAlwaysDrawHorizontalTrack="false"
+    android:scrollbarAlwaysDrawVerticalTrack="false"
+    tools:context="com.aznstudio.namaz.fragments.TimeNamazFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:id="@+id/LayoutIsha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view20">
+
+        <TextView
+            android:id="@+id/text_isha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/isha_title"
+            android:textAlignment="viewStart"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/time_isha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/default_time_namaz"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view20"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_green_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LayoutMaghrib" />
+
+    <LinearLayout
+        android:id="@+id/LayoutMaghrib"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view19">
+
+        <TextView
+            android:id="@+id/text_maghrib"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/maghrib_title"
+            android:textAlignment="viewStart"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/time_maghrib"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/default_time_namaz"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view19"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_green_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LayoutAsr" />
+
+    <LinearLayout
+        android:id="@+id/LayoutAsr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view18">
+
+        <TextView
+            android:id="@+id/text_asr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/asr_title"
+            android:textAlignment="viewStart"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/time_asr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/default_time_namaz"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutDhuhr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view17">
+
+        <TextView
+            android:id="@+id/text_dhuhr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/dhuhr_title"
+            android:textAlignment="viewStart"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/time_dhuhr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/default_time_namaz"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutSunrise"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view16">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sunrise_title"
+            android:textAlignment="viewStart"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/time_sunrise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/default_time_namaz"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view16"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_green_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LayoutFajr" />
+
+    <View
+        android:id="@+id/view17"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_green_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LayoutSunrise" />
+
+    <View
+        android:id="@+id/view18"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_green_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LayoutDhuhr" />
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_green_light"
+        app:layout_constraintTop_toBottomOf="@+id/day_of_month"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <DigitalClock
+        android:id="@+id/digitalClock2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gr_date2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/digitalClock2" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gr_date2" />
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/holo_green_light"
+        app:layout_constraintTop_toBottomOf="@+id/location"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/day_of_week"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view9">
+
+        <TextView
+            android:id="@+id/day_of_week_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:clickable="false"
+            android:text="@string/day_of_week_text_1"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/day_of_week_2"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/day_of_week_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:clickable="false"
+            android:text="@string/day_of_week_text_1"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/day_of_week_3"
+            app:layout_constraintStart_toEndOf="@+id/day_of_week_1"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/day_of_week_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:clickable="false"
+            android:text="@string/day_of_week_text_1"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/day_of_week_4"
+            app:layout_constraintStart_toEndOf="@+id/day_of_week_2"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/day_of_week_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:clickable="false"
+            android:text="@string/day_of_week_text_1"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/day_of_week_5"
+            app:layout_constraintStart_toEndOf="@+id/day_of_week_3"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/day_of_week_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:clickable="false"
+            android:text="@string/day_of_week_text_1"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/day_of_week_6"
+            app:layout_constraintStart_toEndOf="@+id/day_of_week_4"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/day_of_week_6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:clickable="false"
+            android:text="@string/day_of_week_text_1"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/day_of_week_7"
+            app:layout_constraintStart_toEndOf="@+id/day_of_week_5"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/day_of_week_7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:clickable="false"
+            android:text="@string/day_of_week_text_1"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/day_of_week_6"
+            tools:layout_editor_absoluteY="0dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/day_of_month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/day_of_week">
+
+        <TextView
+            android:id="@+id/day_of_month_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/day_of_month_2"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/day_of_month_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/day_of_month_3"
+            app:layout_constraintStart_toEndOf="@+id/day_of_month_1"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/day_of_month_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/day_of_month_4"
+            app:layout_constraintStart_toEndOf="@+id/day_of_month_2"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/day_of_month_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/day_of_month_5"
+            app:layout_constraintStart_toEndOf="@+id/day_of_month_3"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/day_of_month_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/day_of_month_6"
+            app:layout_constraintStart_toEndOf="@+id/day_of_month_4"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/day_of_month_6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/day_of_month_7"
+            app:layout_constraintStart_toEndOf="@+id/day_of_month_5"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/day_of_month_7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/day_of_month_6"
+            tools:layout_editor_absoluteY="0dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutFajr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:longClickable="false"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view10">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/fajr_title"
+            android:textAlignment="viewStart"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/time_fajr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/default_time_namaz"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

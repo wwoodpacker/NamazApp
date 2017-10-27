@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.aznstudio.namaz.fragments.KiblaFragment">
+
+    <TextView
+        android:id="@+id/locality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+
+    <fragment
+        android:id="@+id/mapKibla"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_kibla">
+
+        <ImageView
+            android:id="@+id/arrow_image"
+            android:layout_width="@dimen/compass_size"
+            android:layout_height="@dimen/compass_size"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/point_padding"
+            android:src="@drawable/arrow_kibla"/>
+    </FrameLayout>
+
+</LinearLayout>

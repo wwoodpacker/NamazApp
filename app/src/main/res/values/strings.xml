@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Намаз</string>
+
+    <string name="google_maps_key">AIzaSyCLG7qeUIPth_3AwelH4SKsO7OaPcoUGPE</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Настройки приложения</string>
+    <string name="nav_dr_item_title_time_namaz">Время намаза</string>
+    <string name="nav_dr_item_title_kibla">Кибла</string>
+    <string name="nav_dr_item_title_calendar">Календарь</string>
+    <string name="nav_dr_item_title_mosque">Мечети</string>
+    <string name="nav_dr_item_title_setting">Настройки</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_time_namaz">00:00</string>
+    <!-- Намаз название -->
+    <string name="fajr_title">Фаджр</string>
+    <string name="sunrise_title">Восход</string>
+    <string name="dhuhr_title">Зухр</string>
+    <string name="asr_title">Аср</string>
+    <string name="sunset_title">Закат</string>
+    <string name="maghrib_title">Магриб</string>
+    <string name="isha_title">Иша</string>
+    <!-- ********** -->
+    <!-- Дни недели -->
+    <string name="day_of_week_text_1">Пн</string>
+    <string name="day_of_week_text_2">Вт</string>
+    <string name="day_of_week_text_3">Ср</string>
+    <string name="day_of_week_text_4">Чт</string>
+    <string name="day_of_week_text_5">Пт</string>
+    <string name="day_of_week_text_6">Сб</string>
+    <string name="day_of_week_text_7">Вс</string>
+    <!-- ********** -->
+    <!-- Названия месяцев в исламском календаре -->
+    <string name="month_text_1" >Мухаррам</string>
+    <string name="month_text_2" >Сафар</string>
+    <string name="month_text_3" >Раби’у ль-авваль</string>
+    <string name="month_text_4" >Раби’у с-сани</string>
+    <string name="month_text_5" >Джумада аль-уля</string>
+    <string name="month_text_6" >Джума́да аль-ахира</string>
+    <string name="month_text_7" >Раджаб</string>
+    <string name="month_text_8" >Ша’бан</string>
+    <string name="month_text_9" >Рамадан</string>
+    <string name="month_text_10">Шавва́ль</string>
+    <string name="month_text_11">Зуль-ка’да</string>
+    <string name="month_text_12">Зуль-хиджа</string>
+    <!-- ********** -->
+    <string name="btn_prev"><![CDATA[<]]></string>
+    <string name="btn_next"><![CDATA[>]]></string>
+    <string name="holidays">Мусульманские праздничные дни</string>
+
+</resources>

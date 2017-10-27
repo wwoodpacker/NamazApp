@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_time_namaz"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/nav_dr_item_title_time_namaz" />
+        <item
+            android:id="@+id/nav_kibla"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/nav_dr_item_title_kibla" />
+        <item
+            android:id="@+id/nav_calendar"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/nav_dr_item_title_calendar" />
+        <item
+            android:id="@+id/nav_mosque"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/nav_dr_item_title_mosque" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/nav_dr_item_title_setting" />
+    </group>
+
+</menu>

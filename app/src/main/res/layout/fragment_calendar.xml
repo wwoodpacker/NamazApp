@@ -1,0 +1,991 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constraintLayout2"
+    tools:context="com.aznstudio.namaz.fragments.CalendarFragment"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ScrollView
+        android:fadingEdgeLength="0dp"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <Button
+                    android:id="@+id/btn_prev"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@null"
+                    android:text="@string/btn_prev"
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="0dp" />
+
+                <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@null"
+                    android:text="@string/btn_next"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:layout_editor_absoluteY="0dp" />
+
+                <TextView
+                    android:id="@+id/islam_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_next"
+                    app:layout_constraintStart_toEndOf="@+id/btn_prev"
+                    tools:layout_editor_absoluteY="0dp" />
+
+                <TextView
+                    android:id="@+id/gr_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_next"
+                    app:layout_constraintStart_toEndOf="@+id/btn_prev"
+                    app:layout_constraintTop_toBottomOf="@+id/islam_date" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_green_light"
+                    app:layout_constraintTop_toBottomOf="@+id/gr_date"
+                    tools:layout_editor_absoluteX="0dp" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/week_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@android:color/holo_green_light"
+                    app:layout_constraintBottom_toTopOf="@+id/week_2_day_1"
+                    app:layout_constraintTop_toBottomOf="@+id/week_1_day_1"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="49dp" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@android:color/holo_green_light"
+                    app:layout_constraintBottom_toTopOf="@+id/week_3_day_1"
+                    app:layout_constraintTop_toBottomOf="@+id/week_2_day_1"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="75dp" />
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@android:color/holo_green_light"
+                    app:layout_constraintBottom_toTopOf="@+id/week_4_day_1"
+                    app:layout_constraintTop_toBottomOf="@+id/week_3_day_1"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="97dp" />
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@android:color/holo_green_light"
+                    app:layout_constraintBottom_toTopOf="@+id/week_5_day_2"
+                    app:layout_constraintTop_toBottomOf="@+id/week_4_day_1"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="123dp" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@android:color/holo_green_light"
+                    app:layout_constraintBottom_toTopOf="@+id/week_6_day_1"
+                    app:layout_constraintTop_toBottomOf="@+id/week_5_day_1"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="190dp" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/day_of_week_text_7"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/week_1_day_1"
+                    app:layout_constraintEnd_toStartOf="@+id/week_1_day_2"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/day_of_week_text_1"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/week_1_day_2"
+                    app:layout_constraintEnd_toStartOf="@+id/week_1_day_3"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_1_day_1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/day_of_week_text_2"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/week_1_day_3"
+                    app:layout_constraintEnd_toStartOf="@+id/week_1_day_4"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_1_day_2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/day_of_week_text_3"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/week_1_day_4"
+                    app:layout_constraintEnd_toStartOf="@+id/week_1_day_5"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_1_day_3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/day_of_week_text_4"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/week_1_day_5"
+                    app:layout_constraintEnd_toStartOf="@+id/week_1_day_6"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_1_day_4"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/day_of_week_text_5"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/week_1_day_6"
+                    app:layout_constraintEnd_toStartOf="@+id/week_1_day_7"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_1_day_5"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/day_of_week_text_6"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/week_1_day_7"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_1_day_6"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/week_1_day_1"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/week_2_day_1"
+                    app:layout_constraintEnd_toStartOf="@+id/week_1_day_2"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+                <TextView
+                    android:id="@+id/week_1_day_2"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/week_2_day_2"
+                    app:layout_constraintEnd_toStartOf="@+id/week_1_day_3"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_1_day_1"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+                <TextView
+                    android:id="@+id/week_1_day_3"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/week_2_day_3"
+                    app:layout_constraintEnd_toStartOf="@+id/week_1_day_4"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_1_day_2"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+                <TextView
+                    android:id="@+id/week_1_day_4"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/week_2_day_4"
+                    app:layout_constraintEnd_toStartOf="@+id/week_1_day_5"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_1_day_3"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+                <TextView
+                    android:id="@+id/week_1_day_5"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/week_2_day_5"
+                    app:layout_constraintEnd_toStartOf="@+id/week_1_day_6"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_1_day_4"
+                    app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+                <TextView
+                    android:id="@+id/week_1_day_6"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/week_2_day_6"
+                    app:layout_constraintEnd_toStartOf="@+id/week_1_day_7"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_1_day_5"
+                    app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+                <TextView
+                    android:id="@+id/week_1_day_7"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/week_2_day_7"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_1_day_6"
+                    app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+                <TextView
+                    android:id="@+id/week_2_day_1"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/week_3_day_1"
+                    app:layout_constraintEnd_toStartOf="@+id/week_2_day_2"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/week_1_day_1"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="35dp" />
+
+                <TextView
+                    android:id="@+id/week_2_day_2"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/week_3_day_2"
+                    app:layout_constraintEnd_toStartOf="@+id/week_2_day_3"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_2_day_1"
+                    app:layout_constraintTop_toBottomOf="@+id/week_1_day_2"
+                    tools:layout_editor_absoluteX="76dp"
+                    tools:layout_editor_absoluteY="35dp" />
+
+                <TextView
+                    android:id="@+id/week_2_day_3"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/week_3_day_3"
+                    app:layout_constraintEnd_toStartOf="@+id/week_2_day_4"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_2_day_2"
+                    app:layout_constraintTop_toBottomOf="@+id/week_1_day_3"
+                    tools:layout_editor_absoluteX="132dp"
+                    tools:layout_editor_absoluteY="35dp" />
+
+                <TextView
+                    android:id="@+id/week_2_day_4"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/week_3_day_4"
+                    app:layout_constraintEnd_toStartOf="@+id/week_2_day_5"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_2_day_3"
+                    app:layout_constraintTop_toBottomOf="@+id/week_1_day_4"
+                    tools:layout_editor_absoluteX="184dp"
+                    tools:layout_editor_absoluteY="35dp" />
+
+                <TextView
+                    android:id="@+id/week_2_day_5"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/week_3_day_5"
+                    app:layout_constraintEnd_toStartOf="@+id/week_2_day_6"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_2_day_4"
+                    app:layout_constraintTop_toBottomOf="@+id/week_1_day_5"
+                    tools:layout_editor_absoluteX="239dp"
+                    tools:layout_editor_absoluteY="35dp" />
+
+                <TextView
+                    android:id="@+id/week_2_day_6"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/week_3_day_6"
+                    app:layout_constraintEnd_toStartOf="@+id/week_2_day_7"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_2_day_5"
+                    app:layout_constraintTop_toBottomOf="@+id/week_1_day_6"
+                    tools:layout_editor_absoluteX="296dp"
+                    tools:layout_editor_absoluteY="35dp" />
+
+                <TextView
+                    android:id="@+id/week_2_day_7"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/week_3_day_7"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_2_day_6"
+                    app:layout_constraintTop_toBottomOf="@+id/week_1_day_7"
+                    tools:layout_editor_absoluteX="352dp"
+                    tools:layout_editor_absoluteY="35dp" />
+
+                <TextView
+                    android:id="@+id/week_3_day_1"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/week_4_day_1"
+                    app:layout_constraintEnd_toStartOf="@+id/week_3_day_2"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/week_2_day_1"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="62dp" />
+
+                <TextView
+                    android:id="@+id/week_3_day_2"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/week_4_day_2"
+                    app:layout_constraintEnd_toStartOf="@+id/week_3_day_3"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_3_day_1"
+                    app:layout_constraintTop_toBottomOf="@+id/week_2_day_2"
+                    tools:layout_editor_absoluteX="76dp"
+                    tools:layout_editor_absoluteY="62dp" />
+
+                <TextView
+                    android:id="@+id/week_3_day_3"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/week_4_day_3"
+                    app:layout_constraintEnd_toStartOf="@+id/week_3_day_4"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_3_day_2"
+                    app:layout_constraintTop_toBottomOf="@+id/week_2_day_3"
+                    tools:layout_editor_absoluteX="132dp"
+                    tools:layout_editor_absoluteY="62dp" />
+
+                <TextView
+                    android:id="@+id/week_3_day_4"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/week_4_day_4"
+                    app:layout_constraintEnd_toStartOf="@+id/week_3_day_5"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_3_day_3"
+                    app:layout_constraintTop_toBottomOf="@+id/week_2_day_4"
+                    tools:layout_editor_absoluteX="184dp"
+                    tools:layout_editor_absoluteY="62dp" />
+
+                <TextView
+                    android:id="@+id/week_3_day_5"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/week_4_day_5"
+                    app:layout_constraintEnd_toStartOf="@+id/week_3_day_6"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_3_day_4"
+                    app:layout_constraintTop_toBottomOf="@+id/week_2_day_5"
+                    tools:layout_editor_absoluteX="239dp"
+                    tools:layout_editor_absoluteY="62dp" />
+
+                <TextView
+                    android:id="@+id/week_3_day_6"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/week_4_day_6"
+                    app:layout_constraintEnd_toStartOf="@+id/week_3_day_7"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_3_day_5"
+                    app:layout_constraintTop_toBottomOf="@+id/week_2_day_6"
+                    tools:layout_editor_absoluteX="296dp"
+                    tools:layout_editor_absoluteY="62dp" />
+
+                <TextView
+                    android:id="@+id/week_3_day_7"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/week_4_day_7"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_3_day_6"
+                    app:layout_constraintTop_toBottomOf="@+id/week_2_day_7"
+                    tools:layout_editor_absoluteX="352dp"
+                    tools:layout_editor_absoluteY="62dp" />
+
+                <TextView
+                    android:id="@+id/week_4_day_1"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/week_5_day_1"
+                    app:layout_constraintEnd_toStartOf="@+id/week_4_day_2"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/week_3_day_1"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="86dp" />
+
+                <TextView
+                    android:id="@+id/week_4_day_2"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/week_5_day_2"
+                    app:layout_constraintEnd_toStartOf="@+id/week_4_day_3"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_4_day_1"
+                    app:layout_constraintTop_toBottomOf="@+id/week_3_day_2"
+                    tools:layout_editor_absoluteX="76dp"
+                    tools:layout_editor_absoluteY="86dp" />
+
+                <TextView
+                    android:id="@+id/week_4_day_3"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/week_5_day_3"
+                    app:layout_constraintEnd_toStartOf="@+id/week_4_day_4"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_4_day_2"
+                    app:layout_constraintTop_toBottomOf="@+id/week_3_day_3"
+                    tools:layout_editor_absoluteX="132dp"
+                    tools:layout_editor_absoluteY="86dp" />
+
+                <TextView
+                    android:id="@+id/week_4_day_4"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/week_5_day_4"
+                    app:layout_constraintEnd_toStartOf="@+id/week_4_day_5"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_4_day_3"
+                    app:layout_constraintTop_toBottomOf="@+id/week_3_day_4"
+                    tools:layout_editor_absoluteX="184dp"
+                    tools:layout_editor_absoluteY="86dp" />
+
+                <TextView
+                    android:id="@+id/week_4_day_5"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/week_5_day_5"
+                    app:layout_constraintEnd_toStartOf="@+id/week_4_day_6"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_4_day_4"
+                    app:layout_constraintTop_toBottomOf="@+id/week_3_day_5"
+                    tools:layout_editor_absoluteX="239dp"
+                    tools:layout_editor_absoluteY="86dp" />
+
+                <TextView
+                    android:id="@+id/week_4_day_6"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/week_5_day_6"
+                    app:layout_constraintEnd_toStartOf="@+id/week_4_day_7"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_4_day_5"
+                    app:layout_constraintTop_toBottomOf="@+id/week_3_day_6"
+                    tools:layout_editor_absoluteX="296dp"
+                    tools:layout_editor_absoluteY="86dp" />
+
+                <TextView
+                    android:id="@+id/week_4_day_7"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/week_5_day_7"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_4_day_6"
+                    app:layout_constraintTop_toBottomOf="@+id/week_3_day_7"
+                    tools:layout_editor_absoluteX="352dp"
+                    tools:layout_editor_absoluteY="86dp" />
+
+                <TextView
+                    android:id="@+id/week_5_day_2"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView31"
+                    app:layout_constraintEnd_toStartOf="@+id/week_5_day_3"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_5_day_1"
+                    app:layout_constraintTop_toBottomOf="@+id/week_4_day_2" />
+
+                <TextView
+                    android:id="@+id/week_5_day_1"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/week_6_day_1"
+                    app:layout_constraintEnd_toStartOf="@+id/week_5_day_2"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/week_4_day_1" />
+
+                <TextView
+                    android:id="@+id/week_5_day_3"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView30"
+                    app:layout_constraintEnd_toStartOf="@+id/week_5_day_4"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_5_day_2"
+                    app:layout_constraintTop_toBottomOf="@+id/week_4_day_3" />
+
+                <TextView
+                    android:id="@+id/week_5_day_4"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView32"
+                    app:layout_constraintEnd_toStartOf="@+id/week_5_day_5"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_5_day_3"
+                    app:layout_constraintTop_toBottomOf="@+id/week_4_day_4" />
+
+                <TextView
+                    android:id="@+id/week_5_day_5"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView33"
+                    app:layout_constraintEnd_toStartOf="@+id/week_5_day_6"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_5_day_4"
+                    app:layout_constraintTop_toBottomOf="@+id/week_4_day_5" />
+
+                <TextView
+                    android:id="@+id/week_5_day_6"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView29"
+                    app:layout_constraintEnd_toStartOf="@+id/week_5_day_7"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_5_day_5"
+                    app:layout_constraintTop_toBottomOf="@+id/week_4_day_6" />
+
+                <TextView
+                    android:id="@+id/week_5_day_7"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView28"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_5_day_6"
+                    app:layout_constraintTop_toBottomOf="@+id/week_4_day_7" />
+
+                <TextView
+                    android:id="@+id/week_6_day_1"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/textView31"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/week_5_day_1" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/textView29"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/textView32"
+                    app:layout_constraintTop_toBottomOf="@+id/week_5_day_5" />
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/textView33"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/textView30"
+                    app:layout_constraintTop_toBottomOf="@+id/week_5_day_4" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/textView30"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/week_6_day_1"
+                    app:layout_constraintTop_toBottomOf="@+id/week_5_day_2" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/textView32"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/textView31"
+                    app:layout_constraintTop_toBottomOf="@+id/week_5_day_3" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/textView28"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/textView33"
+                    app:layout_constraintTop_toBottomOf="@+id/week_5_day_6" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="@dimen/cal_tv_width_height"
+                    android:layout_height="@dimen/cal_tv_width_height"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/textView29"
+                    app:layout_constraintTop_toBottomOf="@+id/week_5_day_7"
+                    tools:layout_editor_absoluteX="316dp"
+                    tools:layout_editor_absoluteY="200dp" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/holo_green_light"
+                app:layout_constraintTop_toBottomOf="@+id/week_1"
+                tools:layout_editor_absoluteX="0dp">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/holidays"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteY="0dp" />
+
+
+            </android.support.constraint.ConstraintLayout>
+            <com.aznstudio.namaz.NonScrollListView
+                android:id="@+id/lv_nonscroll_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                >
+            </com.aznstudio.namaz.NonScrollListView>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
